@@ -1,2 +1,115 @@
 @import url("/styles/colors.css");
 @import url("/styles/fonts.css");
+@import url("/styles/reset.css");
+
+.hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: 20px auto 20px;
+  background-color: var(--color-amarillo);
+  text-align: center;
+  height: 100svh;
+}
+
+.hero-pretitle {
+  grid-column: 2/3;
+  font-size: 2.7rem;
+  line-height: 1.1;
+  margin-block: 1.5rem;
+  text-shadow: 2px 2px 2px gray;
+
+  font-variation-settings:
+    "wght" 700,
+    "wdth" 75,
+    "opsz" 100;
+
+  & span {
+    color: red;
+    text-decoration: underline wavy;
+    /* text-underline-offset: 2px; */
+  }
+}
+
+.hero-lang {
+  grid-column: 3/4;
+  writing-mode: vertical-rl;
+  justify-self: end;
+  align-self: center;
+  height: 7rem;
+  border-radius: 8px 0 0 8px;
+  box-shadow: 2px 2px 4px grey;
+  background-color: blueviolet;
+  color: white;
+  text-transform: uppercase;
+  padding-left: 5px;
+  font-variation-settings:
+    "wght" 400,
+    "wdth" 100,
+    "opsz" 10;
+}
+
+.hero-title {
+  grid-column: 2/3;
+  font-size: 6rem;
+  line-height: 0.8;
+  font-variation-settings: "wght" 900, "wdth" 75, "opsz" 72;
+  paint-order: stroke fill;
+  -webkit-text-stroke: 0.2em white;
+  /* text-shadow: 4px 4px 4px grey; */
+  filter: drop-shadow(4px 4px 4px grey);
+  margin-block: 1rem;
+}
+
+.hero-subtitle {
+  grid-column: 2/3;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  font-variation-settings:
+    "wght" 500,
+    "wdth" 100,
+    "opsz" 30;
+
+  & span {
+    color: blueviolet;
+    font-variation-settings:
+      "wght" 800,
+      "wdth" 100,
+      "opsz" 10;
+  }
+}
+
+.hero-ubicacion {
+  grid-column: 2/3;
+  font-size: 2rem;
+  line-height: 1;
+  margin-block: 2rem;
+  font-variation-settings:
+    "wght" 700,
+    "wdth" 75,
+    "opsz" 100;
+}
+
+.hero-call {
+  grid-column: 2/3;
+  justify-self: center;
+  font-size: 2rem;
+  background-color: blue;
+  color: aliceblue;
+  padding: 15px 40px;
+  border-radius: 50px;
+  border: 6px solid white;
+  box-shadow: 4px 4px 4px grey;
+  margin: 1rem 0 6rem;
+  z-index: 1;
+  font-variation-settings:
+    "wght" 700,
+    "wdth" 75,
+    "opsz" 30;
+}
+
+.hero-fotograf {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+}
