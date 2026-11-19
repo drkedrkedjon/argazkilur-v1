@@ -6,16 +6,19 @@
   position: relative;
   display: grid;
   grid-template-columns: 20px auto 20px;
+  gap: 5px;
   background-color: var(--color-amarillo);
   text-align: center;
 }
 
 .hero-pretitle {
   grid-column: 2/3;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   line-height: 1.1;
   margin-block: 1.5rem;
-  text-shadow: 2px 2px 2px gray;
+  /* text-shadow: 2px 2px 2px gray; */
+  text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.3),
+    0 10px 10px rgba(0, 0, 0, 0.1);
 
   font-variation-settings:
     "wght" 700,
@@ -23,7 +26,7 @@
     "opsz" 100;
 
   & span {
-    color: red;
+    color: var(--color-purpura);
     text-decoration: underline wavy;
     /* text-underline-offset: 2px; */
   }
@@ -36,7 +39,9 @@
   align-self: center;
   height: 7rem;
   border-radius: 8px 0 0 8px;
-  box-shadow: 2px 2px 4px grey;
+  /* box-shadow: 2px 2px 4px grey; */
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.3),
+    0 10px 10px rgba(0, 0, 0, 0.1);
   background-color: blueviolet;
   color: white;
   text-transform: uppercase;
@@ -49,13 +54,13 @@
 
 .hero-title {
   grid-column: 2/3;
-  font-size: 5rem;
+  font-size: 6rem;
   line-height: 0.8;
   font-variation-settings: "wght" 900, "wdth" 75, "opsz" 72;
   paint-order: stroke fill;
   -webkit-text-stroke: 0.2em white;
   /* text-shadow: 4px 4px 4px grey; */
-  filter: drop-shadow(4px 4px 4px grey);
+  filter: drop-shadow(1px 10px 10px rgba(0, 0, 0, 0.3));
   margin-block: 1rem;
 }
 
