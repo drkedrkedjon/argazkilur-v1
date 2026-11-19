@@ -54,7 +54,7 @@
 
 .hero-title {
   grid-column: 2/3;
-  font-size: 6rem;
+  font-size: 5.5rem;
   line-height: 0.8;
   font-variation-settings: "wght" 900, "wdth" 75, "opsz" 72;
   paint-order: stroke fill;
