@@ -7,7 +7,7 @@
 .hero {
   position: relative;
   display: grid;
-  grid-template-columns: 20px auto 20px;
+  grid-template-columns: 7vw auto 7vw;
   gap: 5px;
   background-color: var(--amarillo);
   text-align: center;
@@ -33,9 +33,9 @@
 
 .hero-lang {
   grid-column: 3/4;
+  grid-row: 2/3;
   writing-mode: vertical-rl;
-  justify-self: end;
-  align-self: center;
+  align-self: start;
   height: 7rem;
   border-radius: 10px 0 0 10px;
   box-shadow: var(--box-shadow);
@@ -53,7 +53,7 @@
 
 .hero-title {
   grid-column: 2/3;
-  font-size: 5.5rem;
+  font-size: 22vw;
   line-height: 0.8;
   font-variation-settings: "wght" 900, "wdth" 75, "opsz" 72;
   paint-order: stroke fill;
