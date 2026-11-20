@@ -18,13 +18,13 @@ body {
 
 .hero-pretitle {
   grid-column: 2/3;
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   line-height: 1.1;
   margin-block: 1.5rem;
   text-shadow: var(--text-shadow-headers);
 
   font-variation-settings:
-    "wght" 700,
+    "wght" 600,
     "wdth" 75,
     "opsz" 100;
 
@@ -40,7 +40,7 @@ body {
   writing-mode: vertical-rl;
   align-self: start;
   justify-self: end;
-  border-radius: 10px 0 0 10px;
+  border-radius: 14px 0 0 14px;
   box-shadow: var(--box-shadow);
   background-color: var(--purpura-oscura);
   color: var(--blanco);
