@@ -4,6 +4,7 @@
 
 body {
   color: var(--negro);
+  background-color: var(--blanco);
 }
 
 /* HERO SECTION START */
@@ -15,7 +16,11 @@ body {
   column-gap: 5px;
   background-color: var(--amarillo);
   text-align: center;
-  clip-path: polygon(0 0, 0 calc(100% - 20px), 8.82% calc(100% - 34px), 14.71% calc(100% - 7px), 20.59% calc(100% - 21px), 26.47% calc(100% - 5px), 32.35% calc(100% - 32px), 38.24% calc(100% - 4px), 44.12% calc(100% - 29px), 50% calc(100% - 4px), 55.88% calc(100% - 27px), 61.76% calc(100% - 13px), 67.65% calc(100% - 25px), 73.53% calc(100% - 10px), 79.41% calc(100% - 33px), 85.29% calc(100% - 12px), 91.18% calc(100% - 23px), 100% calc(100% - 20px), 100% 0);
+
+
+  clip-path: shape(from 0 0, vline to calc(100% - 25px), curve to 8.33% calc(100% - 28.5px) with 5.56% calc(100% - 30px), smooth to 13.89% calc(100% - 36.5px), smooth to 19.44% calc(100% - 44px), smooth to 25% calc(100% - 27.5px), smooth to 30.56% calc(100% - 27px), smooth to 36.11% calc(100% - 32.5px), smooth to 41.67% calc(100% - 23.5px), smooth to 47.22% calc(100% - 25px), smooth to 52.78% calc(100% - 31px), smooth to 58.33% calc(100% - 23px), smooth to 63.89% calc(100% - 23.5px), smooth to 69.44% calc(100% - 19.5px), smooth to 75% calc(100% - 21.5px), smooth to 80.56% calc(100% - 28.5px), smooth to 86.11% calc(100% - 23.5px), smooth to 91.67% calc(100% - 20.5px), smooth to 100% calc(100% - 25px), vline to 0, hline to 0);
+
+
 
 }
 
@@ -133,6 +138,9 @@ body {
   flex-direction: column;
   background-color: var(--blanco);
   padding-block: 4rem;
+
+  clip-path: shape(from 0 0, vline to calc(100% - 25px), curve to 4.17% calc(100% - 28px) with 2.78% calc(100% - 47px), smooth to 6.94% calc(100% - 11px), smooth to 9.72% calc(100% - 28.5px), smooth to 12.5% calc(100% - 31.5px), smooth to 15.28% calc(100% - 29px), smooth to 18.06% calc(100% - 38.5px), smooth to 20.83% calc(100% - 32px), smooth to 23.61% calc(100% - 35.5px), smooth to 26.39% calc(100% - 43.5px), smooth to 29.17% calc(100% - 45.5px), smooth to 31.94% calc(100% - 28.5px), smooth to 34.72% calc(100% - 5.5px), smooth to 37.5% calc(100% - 3px), smooth to 40.28% calc(100% - 19.5px), smooth to 43.06% calc(100% - 42px), smooth to 45.83% calc(100% - 44px), smooth to 48.61% calc(100% - 31px), smooth to 51.39% calc(100% - 18.5px), smooth to 54.17% calc(100% - 16px), smooth to 56.94% calc(100% - 14px), smooth to 59.72% calc(100% - 23px), smooth to 62.5% calc(100% - 18px), smooth to 65.28% calc(100% - 4.5px), smooth to 68.06% calc(100% - 10px), smooth to 70.83% calc(100% - 10px), smooth to 73.61% calc(100% - 25.5px), smooth to 76.39% calc(100% - 44.5px), smooth to 79.17% calc(100% - 37px), smooth to 81.94% calc(100% - 18px), smooth to 84.72% calc(100% - 16.5px), smooth to 87.5% calc(100% - 16px), smooth to 90.28% calc(100% - 19.5px), smooth to 93.06% calc(100% - 27px), smooth to 95.83% calc(100% - 20.5px), smooth to 100% calc(100% - 25px), vline to 0, hline to 0);
+
 }
 
 .como-funciona-card {
