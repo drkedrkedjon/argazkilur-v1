@@ -2,12 +2,15 @@
 @import url("./fonts.css");
 @import url("./reset.css");
 
+body {
+  color: var(--negro);
+}
 
 
 .hero {
   position: relative;
   display: grid;
-  grid-template-columns: 7vw auto 7vw;
+  grid-template-columns: 30px auto 30px;
   gap: 5px;
   background-color: var(--amarillo);
   text-align: center;
@@ -36,17 +39,16 @@
   grid-row: 2/3;
   writing-mode: vertical-rl;
   align-self: start;
-  height: 7rem;
+  justify-self: end;
   border-radius: 10px 0 0 10px;
   box-shadow: var(--box-shadow);
   background-color: var(--purpura-oscura);
-  border: 2px solid white;
-  transform: translateX(2px);
-  color: white;
+  color: var(--blanco);
+  padding-left: 4px;
+  padding-inline: 20px;
   text-transform: uppercase;
-  padding-left: 5px;
   font-variation-settings:
-    "wght" 400,
+    "wght" 700,
     "wdth" 100,
     "opsz" 10;
 }
@@ -55,7 +57,10 @@
   grid-column: 2/3;
   font-size: 22vw;
   line-height: 0.8;
-  font-variation-settings: "wght" 900, "wdth" 75, "opsz" 72;
+  font-variation-settings:
+    "wght" 900,
+    "wdth" 75,
+    "opsz" 100;
   paint-order: stroke fill;
   -webkit-text-stroke: 0.2em var(--blanco);
   filter: drop-shadow(1px 10px 10px rgba(0, 0, 0, 0.3));
@@ -65,30 +70,30 @@
 .hero-subtitle {
   grid-column: 2/3;
   font-size: 1.4rem;
-  line-height: 1.2;
+  line-height: 1.1;
   font-variation-settings:
-    "wght" 500,
-    "wdth" 95,
-    "opsz" 50;
+    "wght" 600,
+    "wdth" 100,
+    "opsz" 700;
 
   & span {
     color: blueviolet;
     font-variation-settings:
       "wght" 800,
       "wdth" 95,
-      "opsz" 50;
+      "opsz" 80;
   }
 }
 
 .hero-ubicacion {
   grid-column: 2/3;
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1;
-  margin-block: 2rem;
+  margin-block: 1.8rem;
   font-variation-settings:
-    "wght" 700,
+    "wght" 500,
     "wdth" 75,
-    "opsz" 100;
+    "opsz" 60;
 }
 
 .hero-call {
