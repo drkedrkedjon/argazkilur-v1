@@ -61,7 +61,7 @@ body {
 
 .hero-title {
   grid-column: 2/3;
-  font-size: 23vw;
+  font-size: 22vw;
   line-height: 0.85;
   font-variation-settings:
     "wght" 900,
