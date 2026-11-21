@@ -5,6 +5,7 @@
 body {
   color: var(--negro);
   background-color: var(--blanco);
+  overflow: hidden;
 }
 
 /* HERO SECTION START */
