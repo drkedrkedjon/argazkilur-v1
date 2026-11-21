@@ -286,6 +286,7 @@ body {
     top: -20px;
     transform: rotate(-20deg);
     filter: blur(2px);
+    overflow: hidden;
   }
 
   & .tres {
@@ -293,6 +294,7 @@ body {
     top: -20px;
     transform: rotate(65deg);
     filter: blur(2px);
+    overflow: hidden;
   }
 
   & .cuatro {
@@ -300,6 +302,7 @@ body {
     top: -20px;
     transform: rotate(-75deg);
     filter: blur(2px);
+    overflow: hidden;
   }
 
   & h3 {
@@ -309,6 +312,7 @@ body {
       "wght" 700,
       "wdth" 75,
       "opsz" 100;
+    overflow: hidden;
   }
 
   & .linea-amarilla {
