@@ -124,7 +124,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 60%;
+  width: 15rem;
   overflow: hidden;
 }
 
@@ -207,11 +207,13 @@ body {
 .cfc-sombra-1 {
   max-height: 100px;
   align-self: flex-end;
+
 }
 
 .cfc-sombra-2 {
   max-height: 100px;
   align-self: flex-end;
+  margin-right: 10px;
 }
 
 .barra-horisontal {
@@ -229,8 +231,8 @@ body {
 
 .barco {
   position: absolute;
-  bottom: -22px;
-  left: 10px;
+  bottom: -20px;
+  left: 20px;
   /* opacity: 80%; */
   height: 120px;
   transform: rotate(5deg);
@@ -272,7 +274,7 @@ body {
   gap: 10px;
   padding-inline: 10px;
   max-width: 80%;
-  margin-block: 1.6rem;
+  margin-block: 2rem;
 
   & .calidad-card-number {
     position: absolute;
