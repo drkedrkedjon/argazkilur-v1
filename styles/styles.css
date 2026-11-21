@@ -51,6 +51,7 @@ body {
   padding-left: 4px;
   padding-inline: 1.2em;
   text-transform: uppercase;
+  overflow: hidden;
   font-variation-settings:
     "wght" 700,
     "wdth" 100,
@@ -81,7 +82,7 @@ body {
     "opsz" 100;
 
   & span {
-    color: blueviolet;
+    color: var(--purpura-oscura);
     font-variation-settings:
       "wght" 800,
       "wdth" 100,
@@ -123,6 +124,7 @@ body {
   bottom: 0;
   right: -40px;
   width: 60%;
+  overflow: hidden;
 }
 
 /* HERO SECTION END */
@@ -149,6 +151,7 @@ body {
     "wght" 700,
     "wdth" 100,
     "opsz" 100;
+  overflow: hidden;
 }
 
 .como-funciona-card {
