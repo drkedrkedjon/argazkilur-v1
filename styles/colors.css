@@ -8,4 +8,13 @@
 
   --text-shadow-headers: 1px 5px 5px rgba(0, 0, 0, 0.3), 0 10px 10px rgba(0, 0, 0, 0.1);
   --box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.3), 0 10px 10px rgba(0, 0, 0, 0.1);
+
+  --wavy-top:
+    shape(from 0 100%, vline to 20px, curve to 8.33% 8px with 5.56% 10px, smooth to 13.89% 16.5px, smooth to 19.44% 14.5px, smooth to 25% 21px, smooth to 30.56% 23px, smooth to 36.11% 22.5px, smooth to 41.67% 23px, smooth to 47.22% 18.5px, smooth to 52.78% 22.5px, smooth to 58.33% 21px, smooth to 63.89% 32px, smooth to 69.44% 21.5px, smooth to 75% 12.5px, smooth to 80.56% 16.5px, smooth to 86.11% 11px, smooth to 91.67% 9.5px, smooth to 100% 20px, vline to 100%, hline to 0);
+  --wavy-bottom:
+    shape(from 0 0, vline to calc(100% - 20px), curve to 8.33% calc(100% - 8px) with 5.56% calc(100% - 10px), smooth to 13.89% calc(100% - 16.5px), smooth to 19.44% calc(100% - 14.5px), smooth to 25% calc(100% - 21px), smooth to 30.56% calc(100% - 23px), smooth to 36.11% calc(100% - 22.5px), smooth to 41.67% calc(100% - 23px), smooth to 47.22% calc(100% - 18.5px), smooth to 52.78% calc(100% - 22.5px), smooth to 58.33% calc(100% - 21px), smooth to 63.89% calc(100% - 32px), smooth to 69.44% calc(100% - 21.5px), smooth to 75% calc(100% - 12.5px), smooth to 80.56% calc(100% - 16.5px), smooth to 86.11% calc(100% - 11px), smooth to 91.67% calc(100% - 9.5px), smooth to 100% calc(100% - 20px), vline to 0, hline to 0);
+  --wavy-both:
+    shape(from 0 20px, curve to 8.33% 8px with 5.56% 10px, smooth to 13.89% 16.5px, smooth to 19.44% 14.5px, smooth to 25% 21px, smooth to 30.56% 23px, smooth to 36.11% 22.5px, smooth to 41.67% 23px, smooth to 47.22% 18.5px, smooth to 52.78% 22.5px, smooth to 58.33% 21px, smooth to 63.89% 32px, smooth to 69.44% 21.5px, smooth to 75% 12.5px, smooth to 80.56% 16.5px, smooth to 86.11% 11px, smooth to 91.67% 9.5px, smooth to 100% 20px, vline to calc(100% - 20px), curve to 91.67% calc(100% - 29.5px) with 94.44% calc(100% - 32px), smooth to 86.11% calc(100% - 31px), smooth to 80.56% calc(100% - 32.5px), smooth to 75% calc(100% - 20px), smooth to 69.44% calc(100% - 21.5px), smooth to 63.89% calc(100% - 29.5px), smooth to 58.33% calc(100% - 20px), smooth to 52.78% calc(100% - 20.5px), smooth to 47.22% calc(100% - 22px), smooth to 41.67% calc(100% - 11.5px), smooth to 36.11% calc(100% - 11px), smooth to 30.56% calc(100% - 25.5px), smooth to 25% calc(100% - 29px), smooth to 19.44% calc(100% - 13px), smooth to 13.89% calc(100% - 4px), smooth to 8.33% calc(100% - 11.5px), smooth to 0 calc(100% - 20px), vline to 0);
+
+
 }

@@ -16,12 +16,8 @@ body {
   column-gap: 5px;
   background-color: var(--amarillo);
   text-align: center;
-
-
-  clip-path: shape(from 0 0, vline to calc(100% - 25px), curve to 8.33% calc(100% - 28.5px) with 5.56% calc(100% - 30px), smooth to 13.89% calc(100% - 36.5px), smooth to 19.44% calc(100% - 44px), smooth to 25% calc(100% - 27.5px), smooth to 30.56% calc(100% - 27px), smooth to 36.11% calc(100% - 32.5px), smooth to 41.67% calc(100% - 23.5px), smooth to 47.22% calc(100% - 25px), smooth to 52.78% calc(100% - 31px), smooth to 58.33% calc(100% - 23px), smooth to 63.89% calc(100% - 23.5px), smooth to 69.44% calc(100% - 19.5px), smooth to 75% calc(100% - 21.5px), smooth to 80.56% calc(100% - 28.5px), smooth to 86.11% calc(100% - 23.5px), smooth to 91.67% calc(100% - 20.5px), smooth to 100% calc(100% - 25px), vline to 0, hline to 0);
-
-
-
+  /* bottom */
+  clip-path: var(--wavy-bottom)
 }
 
 .hero-pretitle {
@@ -130,7 +126,6 @@ body {
 }
 
 /* HERO SECTION END */
-
 /* COMO FUNCIONA SECTION START */
 
 .como-funciona {
@@ -139,8 +134,7 @@ body {
   background-color: var(--blanco);
   padding-block: 4rem;
 
-  clip-path: shape(from 0 0, vline to calc(100% - 25px), curve to 4.17% calc(100% - 28px) with 2.78% calc(100% - 47px), smooth to 6.94% calc(100% - 11px), smooth to 9.72% calc(100% - 28.5px), smooth to 12.5% calc(100% - 31.5px), smooth to 15.28% calc(100% - 29px), smooth to 18.06% calc(100% - 38.5px), smooth to 20.83% calc(100% - 32px), smooth to 23.61% calc(100% - 35.5px), smooth to 26.39% calc(100% - 43.5px), smooth to 29.17% calc(100% - 45.5px), smooth to 31.94% calc(100% - 28.5px), smooth to 34.72% calc(100% - 5.5px), smooth to 37.5% calc(100% - 3px), smooth to 40.28% calc(100% - 19.5px), smooth to 43.06% calc(100% - 42px), smooth to 45.83% calc(100% - 44px), smooth to 48.61% calc(100% - 31px), smooth to 51.39% calc(100% - 18.5px), smooth to 54.17% calc(100% - 16px), smooth to 56.94% calc(100% - 14px), smooth to 59.72% calc(100% - 23px), smooth to 62.5% calc(100% - 18px), smooth to 65.28% calc(100% - 4.5px), smooth to 68.06% calc(100% - 10px), smooth to 70.83% calc(100% - 10px), smooth to 73.61% calc(100% - 25.5px), smooth to 76.39% calc(100% - 44.5px), smooth to 79.17% calc(100% - 37px), smooth to 81.94% calc(100% - 18px), smooth to 84.72% calc(100% - 16.5px), smooth to 87.5% calc(100% - 16px), smooth to 90.28% calc(100% - 19.5px), smooth to 93.06% calc(100% - 27px), smooth to 95.83% calc(100% - 20.5px), smooth to 100% calc(100% - 25px), vline to 0, hline to 0);
-
+  clip-path: var(--wavy-bottom)
 }
 
 .como-funciona-card {
@@ -213,12 +207,106 @@ body {
   padding: 0.5rem;
 }
 
-
-
-
-
-
-
-
-
 /* COMO FUNCIONA SECTION END */
+/* CALIDAD PROFESIONAL SECTION START */
+
+.calidad-pro {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--negro);
+  padding-block: 6rem;
+  clip-path: var(--wavy-both);
+
+  & h2 {
+    color: var(--amarillo);
+    text-align: center;
+  }
+
+  & .pitch {
+    color: var(--amarillo);
+    text-align: center;
+    text-shadow: var(--text-shadow-headers);
+    margin-bottom: 3rem;
+  }
+
+  & .uno,
+  .tres {
+    align-self: flex-end;
+  }
+}
+
+.calidad-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-inline: 10px;
+  max-width: 70%;
+  margin-block: 1.6rem;
+
+  & .calidad-card-number {
+    position: absolute;
+    opacity: 20%;
+    font-size: 10rem;
+    font-variation-settings:
+      "wght" 900,
+      "wdth" 90,
+      "opsz" 100;
+    color: var(--blanco);
+
+  }
+
+  & .uno {
+    left: -50px;
+    top: -20px;
+    transform: rotate(15deg);
+    filter: blur(2px);
+  }
+
+  & .dos {
+    right: -50px;
+    top: -20px;
+    transform: rotate(-20deg);
+    filter: blur(2px);
+  }
+
+  & .tres {
+    left: -50px;
+    top: -20px;
+    transform: rotate(65deg);
+    filter: blur(2px);
+  }
+
+  & .cuatro {
+    right: -50px;
+    top: -20px;
+    transform: rotate(-75deg);
+    filter: blur(2px);
+  }
+
+  & h3 {
+    color: var(--purpura);
+    font-size: 2.5rem;
+    font-variation-settings:
+      "wght" 700,
+      "wdth" 75,
+      "opsz" 100;
+  }
+
+  & .linea-amarilla {
+    height: 7px;
+    background-color: var(--amarillo);
+  }
+
+  & p {
+    color: var(--blanco);
+  }
+
+
+}
+
+
+
+
+
+/* CALIDAD PROFESIONAL SECTION END */
