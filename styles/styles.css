@@ -229,9 +229,9 @@ body {
 
 .barco {
   position: absolute;
-  bottom: -20px;
-  right: 0;
-  /* opacity: 70%; */
+  bottom: -22px;
+  left: 10px;
+  /* opacity: 80%; */
   height: 120px;
   transform: rotate(5deg);
 }
