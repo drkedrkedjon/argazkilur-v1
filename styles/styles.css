@@ -206,10 +206,12 @@ body {
 
 .cfc-sombra-1 {
   max-height: 100px;
+  align-self: flex-end;
 }
 
 .cfc-sombra-2 {
   max-height: 100px;
+  align-self: flex-end;
 }
 
 .barra-horisontal {
@@ -260,7 +262,7 @@ body {
   flex-direction: column;
   gap: 10px;
   padding-inline: 10px;
-  max-width: 76%;
+  max-width: 80%;
   margin-block: 1.6rem;
 
   & .calidad-card-number {
@@ -277,36 +279,37 @@ body {
 
   & .uno {
     line-height: 0.8;
-    left: -50px;
+    left: -40px;
     top: 20px;
     transform: rotate(15deg);
-    filter: blur(2px);
+    filter: blur(4px);
+    overflow: hidden;
   }
 
   & .dos {
     line-height: 0.8;
-    right: -50px;
+    right: -40px;
     top: 20px;
     transform: rotate(-20deg);
-    filter: blur(2px);
+    filter: blur(4px);
     overflow: hidden;
   }
 
   & .tres {
     line-height: 0.8;
-    left: -50px;
+    left: -40px;
     top: 20px;
     transform: rotate(65deg);
-    filter: blur(2px);
+    filter: blur(4px);
     overflow: hidden;
   }
 
   & .cuatro {
     line-height: 0.8;
-    right: -50px;
+    right: -40px;
     top: 20px;
     transform: rotate(-75deg);
-    filter: blur(2px);
+    filter: blur(4px);
     overflow: hidden;
   }
 
