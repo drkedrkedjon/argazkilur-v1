@@ -255,6 +255,7 @@ body {
 
 .calidad-card {
   position: relative;
+  /* overflow-x: hidden; */
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -275,31 +276,35 @@ body {
   }
 
   & .uno {
+    line-height: 0.8;
     left: -50px;
-    top: -20px;
+    top: 20px;
     transform: rotate(15deg);
     filter: blur(2px);
   }
 
   & .dos {
+    line-height: 0.8;
     right: -50px;
-    top: -20px;
+    top: 20px;
     transform: rotate(-20deg);
     filter: blur(2px);
     overflow: hidden;
   }
 
   & .tres {
+    line-height: 0.8;
     left: -50px;
-    top: -20px;
+    top: 20px;
     transform: rotate(65deg);
     filter: blur(2px);
     overflow: hidden;
   }
 
   & .cuatro {
+    line-height: 0.8;
     right: -50px;
-    top: -20px;
+    top: 20px;
     transform: rotate(-75deg);
     filter: blur(2px);
     overflow: hidden;
