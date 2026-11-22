@@ -145,14 +145,14 @@ body {
   position: absolute;
   font-size: 10rem;
   line-height: 0;
-  top: 150px;
-  opacity: 20%;
+  top: 120px;
+  opacity: 15%;
   transform: rotate(-45deg);
   font-variation-settings:
     "wght" 700,
     "wdth" 100,
     "opsz" 100;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .como-funciona-card {
@@ -354,7 +354,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: var(--blanco);
-  padding-block: 4rem;
+  padding-block: 6rem;
   text-align: center;
   padding-inline: 10px;
   overflow: hidden;
@@ -366,6 +366,15 @@ body {
   & p:last-of-type {
     margin-top: 2rem;
   }
+
+  & .diana {
+    position: absolute;
+    top: 0;
+    right: -50px;
+    max-width: 250px;
+    opacity: 15%;
+    transform: scaleX(-1);
+  }
 }
 
 .images {
@@ -373,8 +382,10 @@ body {
   margin-block: 3rem;
   align-items: end;
   justify-content: center;
+  position: relative;
 
-  .zur {
+
+  & .zur {
     box-sizing: content-box;
     border: 12px solid white;
     box-shadow: var(--box-shadow);
@@ -384,7 +395,7 @@ body {
     transform: translate(10px) rotate(-10deg);
   }
 
-  .popo {
+  & .popo {
     box-sizing: content-box;
     max-height: 180px;
     border: 16px solid white;
@@ -392,7 +403,7 @@ body {
     z-index: 10;
   }
 
-  .olentzero {
+  & .olentzero {
     box-sizing: content-box;
     max-height: 115px;
     border: 12px solid white;
