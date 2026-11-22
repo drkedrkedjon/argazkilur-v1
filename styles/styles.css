@@ -346,8 +346,66 @@ body {
 
 }
 
-
-
-
-
 /* CALIDAD PROFESIONAL SECTION END */
+/* BIOMETRIA SECTION START */
+
+.biometria {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--blanco);
+  padding-block: 4rem;
+  text-align: center;
+  padding-inline: 10px;
+  overflow: hidden;
+
+  & p:first-of-type {
+    margin-top: 2rem;
+  }
+
+  & p:last-of-type {
+    margin-top: 2rem;
+  }
+}
+
+.images {
+  display: flex;
+  margin-block: 3rem;
+  align-items: end;
+  justify-content: center;
+
+  .zur {
+    box-sizing: content-box;
+    border: 12px solid white;
+    box-shadow: var(--box-shadow);
+    max-height: 115px;
+    z-index: 8;
+    margin-bottom: 1rem;
+    transform: translate(10px) rotate(-10deg);
+  }
+
+  .popo {
+    box-sizing: content-box;
+    max-height: 180px;
+    border: 16px solid white;
+    box-shadow: var(--box-shadow);
+    z-index: 10;
+  }
+
+  .olentzero {
+    box-sizing: content-box;
+    max-height: 115px;
+    border: 12px solid white;
+    box-shadow: var(--box-shadow);
+    z-index: 9;
+    margin-bottom: 1rem;
+    transform: translate(-10px) rotate(10deg);
+  }
+}
+
+/* BIOMETRIA SECTION END */
+
+.ubicacion {
+  background-color: var(--negro);
+  clip-path: var(--wavy-both);
+}
