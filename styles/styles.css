@@ -21,11 +21,19 @@ body {
   clip-path: var(--wavy-bottom)
 }
 
+.emoji-transparent {
+  position: absolute;
+  top: -28px;
+  left: 30px;
+  transform: rotate(20deg) scale(140%);
+  display: inline;
+}
+
 .hero-pretitle {
   grid-column: 2/3;
   font-size: 2.5rem;
   line-height: 1.1;
-  margin-block: 2rem;
+  margin: 3rem 0 2rem;
   text-shadow: var(--text-shadow-headers);
 
   font-variation-settings:
@@ -34,6 +42,7 @@ body {
     "opsz" 100;
 
   & span {
+    position: relative;
     color: var(--purpura);
     text-decoration: underline wavy;
   }
@@ -96,8 +105,9 @@ body {
   font-size: 1.8rem;
   line-height: 1.2;
   margin-block: 1.8rem;
+  transform: rotate(4deg);
   font-variation-settings:
-    "wght" 500,
+    "wght" 600,
     "wdth" 85,
     "opsz" 90;
 }
@@ -114,6 +124,7 @@ body {
   box-shadow: var(--box-shadow);
   margin: 1rem 0 8rem;
   z-index: 1;
+  /* transform: rotate(-4deg); */
   font-variation-settings:
     "wght" 700,
     "wdth" 75,
@@ -139,11 +150,11 @@ body {
   padding-block: 4rem;
 
   & .como-funciona-card:first-of-type {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 
   & .como-funciona-card:last-of-type {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   /* clip-path: var(--wavy-bottom) */
@@ -167,7 +178,7 @@ body {
   display: grid;
   grid-template-columns: 20% auto;
   grid-template-rows: auto auto auto auto auto;
-  margin-block: 0.5rem;
+  margin-block: 0.4rem;
 }
 
 .cfc-fondo-amarillo {
@@ -239,10 +250,10 @@ body {
 
 .barco {
   position: absolute;
-  bottom: -20px;
-  left: 20px;
+  bottom: -12px;
+  left: 30px;
   /* opacity: 80%; */
-  height: 120px;
+  height: 130px;
   transform: rotate(5deg);
 }
 
@@ -364,7 +375,7 @@ body {
   background-color: var(--blanco);
   padding-block: 6rem;
   text-align: center;
-  padding-inline: 10px;
+  padding-inline: 2rem;
   overflow: hidden;
 
   & p:first-of-type {
