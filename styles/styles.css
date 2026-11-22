@@ -251,10 +251,10 @@ body {
 .barco {
   position: absolute;
   bottom: -12px;
-  left: 30px;
+  left: 25px;
   /* opacity: 80%; */
   height: 130px;
-  transform: rotate(5deg);
+  /* transform: rotate(5deg); */
 }
 
 /* COMO FUNCIONA SECTION END */
@@ -408,28 +408,28 @@ body {
     box-sizing: content-box;
     border: 12px solid white;
     box-shadow: var(--box-shadow);
-    max-height: 115px;
+    max-height: 125px;
     z-index: 8;
     margin-bottom: 1rem;
-    transform: translate(10px) rotate(-10deg);
+    transform: translate(16px) rotate(-10deg);
   }
 
   & .popo {
     box-sizing: content-box;
     max-height: 180px;
-    border: 16px solid white;
+    border: 12px solid white;
     box-shadow: var(--box-shadow);
     z-index: 10;
   }
 
   & .olentzero {
     box-sizing: content-box;
-    max-height: 115px;
+    max-height: 125px;
     border: 12px solid white;
     box-shadow: var(--box-shadow);
     z-index: 9;
     margin-bottom: 1rem;
-    transform: translate(-10px) rotate(10deg);
+    transform: translate(-16px) rotate(10deg);
   }
 }
 
