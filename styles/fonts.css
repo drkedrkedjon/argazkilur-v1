@@ -12,7 +12,8 @@ html {
   font-family: 'Mona Sans VF';
 }
 
-p {
+p,
+ol {
   font-size: clamp(1.313rem, 0.442vw + 1.209rem, 1.563rem);
   line-height: clamp(2.031rem, -0.122vw + 2.128rem, 2.1rem);
   font-variation-settings:
