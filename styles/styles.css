@@ -393,12 +393,13 @@ body {
     max-width: 250px;
     opacity: 15%;
     transform: scaleX(-1);
+    /* z-index: -1; */
   }
 }
 
 .images {
   display: flex;
-  margin-block: 3rem;
+  margin-block: 2rem;
   align-items: end;
   justify-content: center;
   position: relative;
@@ -437,8 +438,73 @@ body {
 /* UBICACION SECTION START */
 
 .ubicacion {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   background-color: var(--negro);
   clip-path: var(--wavy-both);
+  color: aliceblue;
+  padding-block: 6rem;
+  padding-inline: 2rem;
+
+  & .pin-mapa {
+    position: absolute;
+    max-width: 60vw;
+    opacity: 20%;
+    top: 40px;
+    left: 20px;
+    z-index: -1;
+  }
+
+  & .pitch,
+  h2 {
+    color: var(--rojo);
+    text-shadow: var(--text-shadow);
+  }
+
+  & .mapa-osm {
+    margin-top: 4rem;
+    /* max-width: 85vw; */
+    align-self: end;
+    border: 12px solid var(--rojo);
+    border-radius: 20px;
+    rotate: 6deg;
+  }
+
+  & .action-btn-ubicacion {
+    align-self: center;
+    font-size: 1.5rem;
+    background-color: var(--azul);
+    color: var(--blanco);
+    padding: 12px 30px;
+    border-radius: 50px;
+    border: 4px solid var(--blanco);
+    box-shadow: var(--box-shadow);
+    /* margin-bottom: 1rem; */
+    /* z-index: 1; */
+    transform: rotate(-4deg);
+    translate: -40px -20px;
+    font-variation-settings:
+      "wght" 600,
+      "wdth" 75,
+      "opsz" 30;
+  }
+
+  & p {
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  & .pin-shit {
+    margin-top: 2rem;
+  }
 }
 
 /* UBICACION SECTION END */
+/* RESUME SECTION START */
+
+
+
+
+
+/* RESUME SECTION END */
