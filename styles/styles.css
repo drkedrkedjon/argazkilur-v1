@@ -24,7 +24,8 @@ body {
   column-gap: 0.2rem;
   background-color: var(--amarillo);
   text-align: center;
-  clip-path: var(--wavy-bottom)
+  clip-path: var(--wavy-bottom);
+  padding-inline: var(--padding-inline-small);
 }
 
 
@@ -156,12 +157,17 @@ body {
   background-color: var(--blanco);
   padding-block: var(--padding-block-small);
 
+
   & .como-funciona-card:first-of-type {
     margin-top: 2.5rem;
   }
 
   & .como-funciona-card:last-of-type {
     margin-bottom: 1.5rem;
+  }
+
+  & .pitch {
+    padding-inline: var(--padding-inline-small);
   }
 }
 
@@ -271,10 +277,10 @@ body {
   display: flex;
   flex-direction: column;
   background-color: var(--negro);
-  padding-block: var(--padding-block-big);
   clip-path: var(--wavy-both);
-  overflow: hidden;
+  padding-block: var(--padding-block-big);
   padding-inline: var(--padding-inline-small);
+  overflow: hidden;
 
   & h2 {
     color: var(--amarillo);
@@ -373,27 +379,22 @@ body {
   display: flex;
   flex-direction: column;
   background-color: var(--blanco);
-  padding-block: 6rem;
   text-align: center;
-  padding-inline: 2rem;
+  padding-block: var(--padding-block-small);
+  padding-inline: var(--padding-inline-small);
   overflow: hidden;
 
   & p:first-of-type {
     margin-top: 2rem;
   }
 
-  & p:last-of-type {
-    margin-top: 2rem;
-  }
-
   & .diana {
     position: absolute;
-    top: 0;
+    top: 10px;
     right: -50px;
-    max-width: 250px;
-    opacity: 15%;
+    max-width: 16rem;
+    opacity: 20%;
     transform: scaleX(-1);
-    /* z-index: -1; */
   }
 }
 
@@ -404,11 +405,13 @@ body {
   justify-content: center;
   position: relative;
 
-
-  & .zur {
+  & img {
     box-sizing: content-box;
     border: 12px solid white;
     box-shadow: var(--box-shadow);
+  }
+
+  & .zur {
     max-height: 125px;
     z-index: 8;
     margin-bottom: 1rem;
@@ -416,18 +419,12 @@ body {
   }
 
   & .popo {
-    box-sizing: content-box;
     max-height: 180px;
-    border: 12px solid white;
-    box-shadow: var(--box-shadow);
     z-index: 10;
   }
 
   & .olentzero {
-    box-sizing: content-box;
     max-height: 125px;
-    border: 12px solid white;
-    box-shadow: var(--box-shadow);
     z-index: 9;
     margin-bottom: 1rem;
     transform: translate(-16px) rotate(10deg);
@@ -443,13 +440,13 @@ body {
   flex-direction: column;
   background-color: var(--negro);
   clip-path: var(--wavy-both);
-  color: aliceblue;
-  padding-block: 8rem;
-  padding-inline: 2rem;
+  color: var(--blanco);
+  padding-block: var(--padding-block-big);
+  padding-inline: var(--padding-inline-small);
 
   & .pin-mapa {
     position: absolute;
-    max-width: 60vw;
+    max-width: 70vw;
     opacity: 20%;
     top: 40px;
     left: 20px;
@@ -459,16 +456,15 @@ body {
   & .pitch,
   h2 {
     color: var(--rojo);
-    text-shadow: var(--text-shadow);
   }
 
   & .mapa-osm {
     margin-top: 4rem;
-    /* max-width: 85vw; */
+    max-width: 85vw;
     align-self: end;
-    border: 12px solid var(--rojo);
-    border-radius: 20px;
-    rotate: 6deg;
+    border: 0.5rem solid var(--rojo);
+    border-radius: 1.6rem;
+    rotate: 5deg;
   }
 
   & .action-btn-ubicacion {
@@ -476,12 +472,10 @@ body {
     font-size: 1.5rem;
     background-color: var(--azul);
     color: var(--blanco);
-    padding: 12px 30px;
+    padding: 0.6em 1.6em;
     border-radius: 50px;
-    border: 4px solid var(--blanco);
+    border: 0.3em solid var(--blanco);
     box-shadow: var(--box-shadow);
-    /* margin-bottom: 1rem; */
-    /* z-index: 1; */
     transform: rotate(-4deg);
     translate: -40px -20px;
     font-variation-settings:
@@ -491,7 +485,7 @@ body {
   }
 
   & p {
-    margin-top: 3rem;
+    margin-top: 2rem;
     text-align: center;
   }
 
@@ -504,12 +498,12 @@ body {
 /* RESUME SECTION START */
 
 .resume {
-  padding-inline: 1rem;
+  padding-inline: var(--padding-inline-small);
   display: flex;
   flex-direction: column;
   background-color: var(--amarillo);
   clip-path: var(--wavy-both);
-  padding-block: 7rem;
+  padding-block: var(--padding-block-big);
 
   & .repasamos-lista {
     max-width: 80vw;
@@ -519,7 +513,7 @@ body {
     font-variation-settings:
       "wght" 500,
       "wdth" 100,
-      "opsz" 100;
+      "opsz" 80;
   }
 
   & .action-btn-resume {
@@ -527,9 +521,9 @@ body {
     font-size: 1.5rem;
     background-color: var(--azul);
     color: var(--blanco);
-    padding: 12px 30px;
+    padding: 0.6em 2em;
     border-radius: 50px;
-    border: 4px solid var(--blanco);
+    border: 0.3em solid var(--blanco);
     box-shadow: var(--box-shadow);
     margin-top: 1rem;
     min-width: 15rem;
@@ -551,7 +545,12 @@ body {
   }
 
   & .pitch-resume {
-    margin-top: 5rem;
+    margin-top: 3rem;
+    font-size: 2.5rem;
+    font-variation-settings:
+      "wght" 600,
+      "wdth" 75,
+      "opsz" 70;
   }
 }
 
@@ -564,13 +563,12 @@ body {
   align-items: center;
   background-color: var(--negro);
   clip-path: var(--wavy-top);
-  padding-block: 6rem;
-  padding-inline: 1rem;
+  padding-block: var(--padding-block-big);
+  padding-inline: var(--padding-inline-small);
   text-align: center;
 
   & h2 {
     color: var(--amarillo);
-    text-shadow: var(--text-shadow);
   }
 
   & h3 {
@@ -583,19 +581,20 @@ body {
   }
 
   & .separator-rojo {
-    width: 80vw;
+    width: 100%;
     background-color: var(--rojo);
     margin-top: 3rem;
     border-radius: 8px;
-    padding: 10px 30px;
+    padding: 0.8rem 2rem;
     display: flex;
-    justify-content: space-evenly;
+    gap: 1rem;
+    justify-content: center;
   }
 
   & p:last-of-type {
-    margin-top: 3rem;
+    margin-top: 1rem;
     font-size: 0.8rem;
-    line-height: 1.2;
+    line-height: 1.3;
   }
 }
 
