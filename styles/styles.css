@@ -503,6 +503,10 @@ body {
 /* UBICACION SECTION END */
 /* RESUME SECTION START */
 
+.resume {
+  background-color: var(--amarillo);
+  clip-path: var(--wavy-both);
+}
 
 
 
