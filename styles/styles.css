@@ -25,7 +25,7 @@ body {
   background-color: var(--amarillo);
   text-align: center;
   clip-path: var(--wavy-bottom);
-  padding-inline: var(--padding-inline-small);
+  /* padding-inline: var(--padding-inline-small); */
 }
 
 
