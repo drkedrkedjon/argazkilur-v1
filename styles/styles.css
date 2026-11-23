@@ -565,7 +565,7 @@ body {
   background-color: var(--negro);
   clip-path: var(--wavy-top);
   padding-block: 6rem;
-  padding-inline: 2rem;
+  padding-inline: 1rem;
   text-align: center;
 
   & h2 {
@@ -593,8 +593,8 @@ body {
   }
 
   & p:last-of-type {
-    margin-block: 3rem;
-    font-size: 1rem;
+    margin-top: 3rem;
+    font-size: 0.8rem;
     line-height: 1.2;
   }
 }
