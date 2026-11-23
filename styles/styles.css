@@ -79,7 +79,7 @@ body {
   paint-order: stroke fill;
   -webkit-text-stroke: 0.22em var(--blanco);
   filter: drop-shadow(1px 10px 10px rgba(0, 0, 0, 0.5));
-  margin-block: 1rem;
+  margin: 1rem 0 2rem;
 }
 
 .hero-subtitle {
@@ -103,8 +103,8 @@ body {
 .hero-ubicacion {
   grid-column: 2/3;
   font-size: 1.8rem;
-  line-height: 1.2;
-  margin-block: 1.8rem;
+  line-height: 1.1;
+  margin-block: 2rem;
   transform: rotate(4deg);
   font-variation-settings:
     "wght" 600,
@@ -444,7 +444,7 @@ body {
   background-color: var(--negro);
   clip-path: var(--wavy-both);
   color: aliceblue;
-  padding-block: 6rem;
+  padding-block: 8rem;
   padding-inline: 2rem;
 
   & .pin-mapa {
