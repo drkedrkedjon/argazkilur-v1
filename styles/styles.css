@@ -21,6 +21,7 @@ body {
 .hero {
   position: relative;
   display: grid;
+  place-items: center;
   grid-template-columns: minmax(15px, 60px) auto minmax(15px, 60px);
   column-gap: 0.2rem;
   background-color: var(--amarillo);
@@ -164,7 +165,7 @@ body {
   }
 
   .hero-subtitle {
-    max-width: 60rem;
+    max-width: 40rem;
     place-self: center;
   }
 
