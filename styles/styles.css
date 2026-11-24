@@ -93,7 +93,7 @@ body {
 .hero-subtitle {
   grid-column: 2/3;
   /* font-size: 1.4rem; */
-  line-height: 1.3;
+  /* line-height: 1.3; */
   font-variation-settings:
     "wght" 500,
     "wdth" 100,
@@ -110,8 +110,8 @@ body {
 
 .hero-ubicacion {
   grid-column: 2/3;
-  font-size: 1.6rem;
-  line-height: 1.1;
+  /* font-size: 1.6rem;
+  line-height: 1.1; */
   margin-block: 2rem;
   transform: rotate(2deg);
   font-variation-settings:
@@ -187,7 +187,7 @@ body {
 
 .como-funciona-card {
   display: grid;
-  grid-template-columns: 20% auto;
+  grid-template-columns: minmax(0%, 25%) auto;
   grid-template-rows: repeat(auto, 5);
   margin-block: 0.5rem;
 }
@@ -220,7 +220,7 @@ body {
 }
 
 .cfc-title {
-  font-size: 2.3rem;
+  /* font-size: 2.3rem; */
   font-variation-settings:
     "wght" 700,
     "wdth" 75,
@@ -355,8 +355,9 @@ body {
 
   & h3 {
     color: var(--purpura);
-    font-size: 2.4rem;
-    font-variation-settings: "wght" 700,
+    /* font-size: 2.4rem; */
+    font-variation-settings:
+      "wght" 700,
       "wdth" 75,
       "opsz" 100;
   }
@@ -545,12 +546,12 @@ body {
   }
 
   & .pitch-resume {
-    margin-top: 3rem;
-    font-size: 2.5rem;
+    margin-top: 4rem;
+    /* font-size: 2.5rem; */
     font-variation-settings:
-      "wght" 600,
-      "wdth" 75,
-      "opsz" 70;
+      "wght" 800,
+      "wdth" 125,
+      "opsz" 100;
   }
 }
 
