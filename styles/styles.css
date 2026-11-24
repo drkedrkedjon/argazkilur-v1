@@ -586,7 +586,7 @@ body {
   }
 
   & .separator-rojo {
-    width: min(100%, 30rem)%;
+    width: min(100%, 30rem);
     background-color: var(--rojo);
     margin-top: 3rem;
     border-radius: 8px;
