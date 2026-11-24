@@ -50,9 +50,9 @@ body {
 
   & .emoji-transparent {
     position: absolute;
-    top: -0.7em;
+    top: -0.5em;
     left: 0.8em;
-    transform: rotate(20deg) scale(140%);
+    transform: rotate(20deg) scale(70%);
   }
 }
 
@@ -175,6 +175,7 @@ body {
 
   .hero-fotograf {
     right: 6rem;
+    width: initial;
   }
 }
 
