@@ -27,7 +27,6 @@ h2 {
   color: var(--negro);
   font-size: clamp(1.5rem, 1.326vw + 1.189rem, 2.25rem);
   line-height: clamp(1.65rem, 1.856vw + 1.215rem, 2.7rem);
-  ;
   font-variation-settings:
     "wght" 700,
     "wdth" 100,
@@ -39,7 +38,8 @@ h2 {
 
 h3 {
   font-size: clamp(2.25rem, 1.547vw + 1.887rem, 3.125rem);
-  line-height: clamp(2.25rem, 2.652vw + 1.628rem, 3.75rem);
+  /* line-height: clamp(2.25rem, 2.652vw + 1.628rem, 3.75rem); */
+  line-height: 0.9;
 }
 
 .pitch {
@@ -55,4 +55,6 @@ h3 {
   line-height: clamp(3.6rem, 4.243vw + 2.606rem, 6rem);
   text-shadow: var(--text-shadow-headers);
   margin-inline: clamp(0rem, -3.5795rem + 15.9091vw, 8.75rem);
+  max-width: 80rem;
+  align-self: center;
 }
