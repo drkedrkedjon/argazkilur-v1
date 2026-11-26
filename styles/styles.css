@@ -230,6 +230,7 @@ body {
   grid-template-columns: minmax(10%, 25%) auto;
   grid-template-rows: repeat(5, auto);
   margin-block: 0.5rem;
+  align-content: start;
 }
 
 
@@ -261,7 +262,6 @@ body {
 }
 
 .cfc-title {
-  /* font-size: 2.3rem; */
   font-variation-settings:
     "wght" 700,
     "wdth" 75,
@@ -319,18 +319,21 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     column-gap: 1rem;
-    align-items: start;
+    align-items: stretch;
     margin-top: 5rem;
     max-width: 80rem;
-    /* align-self: center; */
+
+    .como-funciona-card {
+      margin-block: 0rem;
+    }
 
     & .como-funciona-card:first-of-type {
-      margin-block: 0.5rem;
+      margin-block: 0rem;
     }
 
 
     & .como-funciona-card:last-of-type {
-      margin-block: 0.5rem;
+      margin-block: 0rem;
     }
 
     & .flash-shit {
@@ -410,8 +413,14 @@ body {
     margin-bottom: 3rem;
   }
 
-  & .uno,
-  .tres {
+}
+
+.calidad-cards-container {
+  display: flex;
+  flex-direction: column;
+
+  & .card-uno,
+  .card-tres {
     align-self: flex-end;
   }
 }
@@ -425,9 +434,10 @@ body {
   width: fit-content;
   margin-block: 1.6rem;
 
+
   & .calidad-card-number {
     position: absolute;
-    opacity: 20%;
+    opacity: 30%;
     font-size: 10rem;
     font-variation-settings:
       "wght" 900,
@@ -436,34 +446,35 @@ body {
     color: var(--blanco);
   }
 
-  & .uno,
-  .dos,
-  .tres,
-  .cuatro {
+
+  & .num-uno,
+  .num-dos,
+  .num-tres,
+  .num-cuatro {
     line-height: 0.8;
     filter: blur(4px);
     overflow: hidden;
   }
 
-  & .uno {
+  & .num-uno {
     left: -40px;
     top: 20px;
     transform: rotate(15deg);
   }
 
-  & .dos {
+  & .num-dos {
     right: -40px;
     top: 20px;
     transform: rotate(-20deg);
   }
 
-  & .tres {
+  & .num-tres {
     left: -40px;
     top: 20px;
     transform: rotate(65deg);
   }
 
-  & .cuatro {
+  & .num-cuatro {
     right: -40px;
     top: 20px;
     transform: rotate(-75deg);
@@ -485,6 +496,58 @@ body {
 
   & p {
     color: var(--blanco);
+  }
+}
+
+/* Calidad profesional section media query */
+@media (min-width: 55rem) {
+  .calidad-cards-container {
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: strech;
+    margin-top: var(--padding-inline-big);
+    max-width: 60rem;
+    align-content: start;
+  }
+
+  .calidad-card {
+    gap: 0.8em;
+    max-width: 30rem;
+    padding-inline: var(--padding-inline-small);
+    margin-block: 0;
+
+
+    & .calidad-card-number {
+      font-size: 12rem;
+    }
+
+    & .num-uno {
+      left: -70px;
+      top: 30px;
+    }
+
+    & .num-dos {
+      right: -70px;
+      top: 30px;
+    }
+
+    & .num-tres {
+      left: -70px;
+      top: 30px;
+    }
+
+    & .num-cuatro {
+      right: -70px;
+      top: 30px;
+    }
+  }
+
+  .calidad-card.card-uno,
+  .calidad-card.card-tres {
+    text-align: right;
   }
 }
 
