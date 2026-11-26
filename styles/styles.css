@@ -558,11 +558,16 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: var(--blanco);
   text-align: center;
   padding-block: var(--padding-block-small);
   padding-inline: var(--padding-inline-small);
   overflow: hidden;
+
+  & p {
+    max-width: 60rem;
+  }
 
   & p:first-of-type {
     margin-top: 2rem;
@@ -608,6 +613,49 @@ body {
     z-index: 9;
     margin-bottom: 1rem;
     transform: translate(-16px) rotate(10deg);
+  }
+}
+
+@media (min-width: 47rem) {
+  .biometria {
+    padding-block: var(--padding-block-big);
+    padding-inline: var(--padding-inline-small);
+
+
+    & p:first-of-type {
+      margin-top: 5rem;
+    }
+
+    & .diana {
+      top: 80px;
+      right: 10rem;
+      max-width: 20rem;
+    }
+  }
+
+  .images {
+    margin-block: 4rem;
+
+
+    & img {
+      border: 16px solid white;
+    }
+
+    & .zur {
+      max-height: 250px;
+      margin-bottom: 2rem;
+      transform: translate(10px) rotate(-10deg);
+    }
+
+    & .popo {
+      max-height: 350px;
+    }
+
+    & .olentzero {
+      max-height: 250px;
+      margin-bottom: 2rem;
+      transform: translate(-10px) rotate(10deg);
+    }
   }
 }
 
