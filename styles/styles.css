@@ -768,6 +768,10 @@ body {
       max-width: 60rem;
     }
 
+    & .pin-shit {
+      margin-top: 3rem;
+    }
+
   }
 }
 
