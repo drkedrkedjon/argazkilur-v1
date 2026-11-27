@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>Choosing language</title>
+
+    <link
+      rel="alternate"
+      hreflang="eu"
+      href="/eu/"
+    />
+    <link
+      rel="alternate"
+      hreflang="es"
+      href="/es/"
+    />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="/en/"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="/es/"
+    />
+
+    <script>
+      const locales = ["eu", "es", "en"];
+      const saved = localStorage.getItem("locale");
+
+      const preferred = saved
+        ? saved
+        : (navigator.languages || [navigator.language])
+            .map((language) => language.slice(0, 2).toLowerCase())
+            .find((language) => locales.includes(language)) || "eu";
+
+      location.replace(`/${preferred}/`);
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <p>Choose a language:</p>
+      <ul>
+        <li><a href="/eu/">Euskara</a></li>
+        <li><a href="/es/">Español</a></li>
+        <li><a href="/en/">English</a></li>
+      </ul>
+    </noscript>
+  </body>
+</html>
